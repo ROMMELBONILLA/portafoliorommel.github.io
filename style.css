@@ -1,8 +1,11 @@
+
 * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 :root {
     --primario: #16213e;
     --secundario: #00d4ff;
@@ -13,79 +16,59 @@
 
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: var(--fondo-claro);
-    color: #DD5646;
+    font-family: 'Winky Sans', sans-serif;
+    font-size: 16px;
     line-height: 1.6;
+    color: #333;
+    background-color: var(--fondo-claro);
+    background-image: url("IMG/textura fondo.jpg");
     padding: 20px;
-background-image:url("img/textura fondo.jpg");
 }
 
+
 header {
-	background-color:rgba(22,22,22,1.00);
-	 color: white;
+    background-color: rgba(22, 22, 22, 1.00);
+    color: white;
     padding: 50px;
     text-align: center;
     border-radius: 30px;
     box-shadow: 0 4px 10px var(--sombra);
 }
 
-nav{
- border-radius: 30px;
-	margin-top: 10px;
-	background-color: #DD5646;
-}
-
 header h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
     font-size: 3rem;
     margin-bottom: 10px;
- font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;	
-}
-.nombre{
-	color: white;
 }
 
-#acerca h2{
-	color:  #4692AE;
+
+nav {
+    border-radius: 30px;
+    margin-top: 10px;
+    background-color: #DD5646;
 }
 
-#servicios h2{
-	color:  #4692AE;
+
+h1, h2, h3 {
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: 700;
+    color: white;
 }
 
-#portafolio h2{
-	color:  #4692AE;
-}
-
-#testimonios h2{
-	color:  #4692AE;
-	padding-bottom: 70px;
-}
-
-#contacto h2{
-	color:  #4692AE;
-}
-
-.rommel {
-	padding: 50px;
-	 border-radius: 70px;
-}
-
-.icaro img{
-	padding-top: 50px;
-	 border-radius: 50px;
+h2 {
+    color: #4692AE;
+    margin-bottom: 10px;
 }
 
 h2::after {
-    
     display: block;
     width: 50px;
     height: 4px;
     margin: 50px 0;
-	color:  #DD5646;
+    background-color: #DD5646;
 }
+
 
 #portafolio img {
     width: 100%;
@@ -93,13 +76,27 @@ h2::after {
     border-radius: 30px;
     box-shadow: 0 4px 10px var(--sombra);
     animation: fadeIn 0.8s ease-in-out;
-	margin-top: 70px;
-	margin-bottom:70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
-.cortos{
-	color: #FFC46F;
-	text-align: center;
+
+.cortos {
+    color: #FFC46F;
+    text-align: center;
+    margin: 70px;
 }
+
+.rommel {
+    padding: 50px;
+    border-radius: 70px;
+}
+
+.icaro img {
+    padding-top: 50px;
+    border-radius: 50px;
+}
+
+
 form {
     margin-top: 20px;
     display: flex;
@@ -126,9 +123,10 @@ input::placeholder, textarea::placeholder {
     font-style: italic;
 }
 
+
 button {
     padding: 10px 20px;
-    background-color: var;
+    background-color: var(--secundario);
     color: var(--texto-claro);
     border: none;
     border-radius: 8px;
@@ -140,58 +138,31 @@ button {
 button:hover {
     background-color: #00bde3;
 }
-iframe{
-	 border-radius: 70px;
-	margin-bottom: 70px;
-	margin-top: 70px;
+
+
+iframe {
+    border-radius: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 
-        .description {
-            width: 50%;
-        }
 
-        h2 {
-            margin-bottom: 10px;
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-            color: #555;
-        }
-footer p{
-	background-color:rgba(22,22,22,1.00);
-	 color: white;
+footer p {
+    background-color: rgba(22, 22, 22, 1.00);
+    color: white;
     padding: 20px;
     text-align: center;
     border-radius: 30px;
     box-shadow: 0 4px 10px var(--sombra);
 }
 
+
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+        transform: scale(0.9
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    #portafolio img {
-        width: 100%;
-    }
-
-    form input, form textarea {
-        width: 100%;
-    }
-}
  
-       
+          
       
        
